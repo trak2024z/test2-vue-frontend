@@ -4,7 +4,7 @@ import { onMounted, ref } from 'vue'
 const userList = ref([]);
 
 onMounted(async () => {
-  const response = await fetch('http://localhost:3000/user');
+  const response = await fetch('https://6e3c4509-7a36-47b2-b8aa-af3e8d4f892b-00-275zxodyg5wnk.kirk.replit.dev/user');
   userList.value = await response.json();
 });
 </script>
